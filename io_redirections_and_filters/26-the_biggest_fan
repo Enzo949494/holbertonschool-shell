@@ -1,2 +1,2 @@
 #!/bin/bash
-{while IFS=$'\t' read -r host ; do echo "$host"; done < "$1" | head -n 11 | do printf "$host" "$count"}
+{while IFS=$'\t' read -r host | do echo "$host" | done < "$1" | head -n 11 | do printf "$host" "$count"}
